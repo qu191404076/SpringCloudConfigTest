@@ -1,2 +1,10 @@
 server:
   port: 8099
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 60
+    lease-renewal-interval-in-seconds: 40
